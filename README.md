@@ -1,5 +1,7 @@
 # 🚰 Pump Master Application - Setup Guide
 
+https://l10n37.github.io/PumpMasterDemo/
+
 **Framework:** Bootstrap 5.3 + jQuery 3.6
 
 ---
@@ -83,7 +85,7 @@ The Pump Master Application is a comprehensive web-based pump management system 
 
 ### 5.1 Login Process
 
-1. Open the application in your web browser  
+1. Open the application in your web browser  (https://l10n37.github.io/PumpMasterDemo/)
 2. Enter your username and password  
 3. Click "Login" to authenticate  
 4. Upon successful login, you will be redirected to the dashboard  
