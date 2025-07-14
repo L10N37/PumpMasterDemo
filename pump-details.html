@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Pump Details</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap & FontAwesome -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" />
+
+    <!-- Leaflet.js for map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Shared styles -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <style>
+        #map {
+            height: 300px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        #chart-container {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container mt-4">
+        <div class="dashboard-container">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h2><i class="fas fa-cog me-2"></i>Pump Details</h2>
+                <a href="index.html" class="btn btn-outline-secondary">
+                    <i class="fas fa-arrow-left me-1"></i>Back to Dashboard
+                </a>
+            </div>
+
+            <div id="pumpDetails" class="mt-4"></div>
+            <div id="map"></div>
+
+            <div id="chart-container">
+                <label for="chartType" class="form-label mt-4">Select Chart Type:</label>
+                <select id="chartType" class="form-select w-auto mb-3">
+                    <option value="line">Line</option>
+                    <option value="bar">Bar</option>
+                </select>
+                <canvas id="pressureChart" height="100"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="./js/jscript-pump-details.js"></script>
+
+</body>
+</html>
